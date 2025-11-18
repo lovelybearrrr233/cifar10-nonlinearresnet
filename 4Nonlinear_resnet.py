@@ -366,7 +366,7 @@ if __name__ == "__main__":
     DEVICE = "cuda:1" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {DEVICE}")
 
-    BATCH_SIZE = 32 # 【建议】鉴于模型更复杂，先从 64 开始尝试
+    BATCH_SIZE = 64 # 【建议】鉴于模型更复杂，先从 64 开始尝试
     LEARNING_RATE = 1e-4 
     EPOCHS = 100
     WARMUP_EPOCHS = 10
